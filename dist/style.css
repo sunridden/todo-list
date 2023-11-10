@@ -10,3 +10,36 @@
     color: white;
     padding: 30px;
 }
+
+.main {
+    display: flex;
+}
+
+.sidebar {
+    background-color: #eee;
+    padding: 20px;
+    width: 20%;
+}
+
+button {
+    background-color: #eee;
+    font-size: 1.15rem;
+    border: none;
+    padding: 15px 20px;
+    text-align: left;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.default-navigation {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-title {
+    padding: 10px;
+    margin-top: 15px;
+}
