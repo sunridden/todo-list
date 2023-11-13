@@ -27,7 +27,6 @@ button {
     border: none;
     padding: 15px 20px;
     text-align: left;
-    width: 100%;
 }
 
 button:hover {
@@ -42,4 +41,69 @@ button:hover {
 .projects-title {
     padding: 10px;
     margin-top: 15px;
+}
+
+.tasks {
+    padding: 30px;
+    margin-left: 40px;
+    width: 100%;
+}
+
+.add-task-btn {
+    background-color: white;
+}
+
+textarea {
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+.new-todo-item-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.date {
+    width: 20%;
+}
+
+#title {
+    height: 40px;
+    font-size: 1.20rem;
+}
+
+#description {
+    height: 25px;
+}
+
+.form-btns {
+    display: flex;
+    gap: 15px;
+}
+
+.form-btn {
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.submit-btn {
+    background-color: #80ff00;
+}
+
+.submit-btn:hover {
+    background-color: #59D42B;
+}
+
+.cancel-btn {
+    background-color: #FF0030;
+}
+
+.cancel-btn:hover {
+    background-color: #C64639;
 }
