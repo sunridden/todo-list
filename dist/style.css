@@ -107,3 +107,7 @@ textarea {
 .cancel-btn:hover {
     background-color: #C64639;
 }
+
+.hidden {
+    display: none;
+}

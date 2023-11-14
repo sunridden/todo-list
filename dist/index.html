@@ -29,10 +29,11 @@
         <div class="tasks">
             <h1>Inbox</h1>
             <button class="add-task-btn">➕ Add task</button>
-            <form class="new-todo-item-form" action="post">
+            <form class="new-todo-item-form hidden" action="post">
                 <textarea name="title" id="title" cols="5" rows="5" placeholder="Task name" required></textarea>
                 <textarea name="description" id="description" cols="5" rows="5" placeholder="Description"></textarea>
-                <input class="date" type="date" required>
+                <label for="date"></label>
+                <input class="date" id="date" type="date" required>
                 <div class="form-btns">
                     <button class="submit-btn form-btn">Submit</button>
                     <button class="cancel-btn form-btn">Cancel</button>
