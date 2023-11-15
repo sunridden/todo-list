@@ -63,6 +63,7 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin: 40px 0;
 }
 
 .date {
@@ -110,4 +111,30 @@ textarea {
 
 .hidden {
     display: none;
+}
+
+.new-todo-item {
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.left-task-panel, .right-task-panel {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.description {
+    font-size: 0.8rem;
+}
+
+.task-clear-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    cursor: pointer;
 }
