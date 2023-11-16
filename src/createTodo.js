@@ -26,7 +26,8 @@ export default function createToDoItem() {
         const title = formData.get('title');
         const description = formData.get('description');
         const date = formData.get('date');
-        const todoItem = todo(title, description, date);
+        const priority = formData.get('new-priority');
+        const todoItem = todo(title, description, date, priority);
         addTodoForm.reset();
         tasks.appendChild(todoItem);
     })

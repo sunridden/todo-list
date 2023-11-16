@@ -1,7 +1,12 @@
-export default function todo(title, description, date) {
+import createPriority from "./createPriority";
+
+export default function todo(title, description, date, priority) {
 
     const task = document.createElement('div');
     task.classList.add('new-todo-item');
+
+    const addPriority = createPriority(priority);
+    task.classList.add(addPriority);
 
     const left_task_panel = document.createElement('div');
     left_task_panel.classList.add('left-task-panel');
@@ -12,6 +17,7 @@ export default function todo(title, description, date) {
     const btn = document.createElement('button');
     btn.classList.add('task-clear-btn');
 
+    //Sets todos as complete
     btn.addEventListener('click', () => {
         task.remove()
     })

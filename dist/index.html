@@ -34,6 +34,15 @@
                 <textarea name="description" id="description" cols="5" rows="5" placeholder="Description"></textarea>
                 <label for="date"></label>
                 <input class="date" name="date" type="date" required>
+                <div class="priority-btns">
+                    <p class="priority-text">Priority: </p>
+                    <label for="low-priority" class="priority-label">Low</label>
+                    <input name="new-priority" id="low-priority" type="radio" value="low" required>
+                    <label for="medium-priority" class="priority-label">Medium</label>
+                    <input name="new-priority" id="medium-priority" type="radio" value="medium">
+                    <label for="high-priority" class="priority-label">High</label>
+                    <input name="new-priority" id="high-priority" type="radio" value="high">
+                </div>
                 <div class="form-btns">
                     <button class="submit-btn form-btn">Submit</button>
                     <button type="button" class="cancel-btn form-btn">Cancel</button>
