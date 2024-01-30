@@ -23,3 +23,15 @@ export function resetTodos() {
         task.style.display='flex';
     })
 }
+
+export function orderTodosByClass(projectName) {
+    const taskList = document.querySelectorAll('.new-todo-item');
+
+    taskList.forEach((task) => {
+        if (!(task.classList.contains(projectName))) {
+            task.style.display='none';
+        } else {
+            task.style.display='flex';
+        }
+    })
+}
